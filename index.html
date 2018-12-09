@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" data-background-color = "#c7ebef">
+				<section class="slide-1" data-background-color = "#c7ebef" >HyperText Transfer Protocol</section>
+				<section class="slide-2"data-background-color = "#c7ebef"><h2>What is it?</h2><p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents.
+					It is the foundation of any data exchange on the Web and a client-server protocol </p></section>
+					<section>
+						<section class="slide-3"data-background-color = "#c7ebef"><h2>How is it work?<h2><img src="img/LSBAWS_HTTP_request_response.png"/></section>
+						<section data-background-color = "#c7ebef"><h2>Client</h2><p>The client is any tool that acts on the behalf of the user. This role is primarily performed by the Web browser.
+								The browser is always the entity initiating the request.</p></section>
+							<section data-background-color = "#c7ebef"><h2>The Web server</h2><p>On the opposite side of the communication channel, is the server which serves the document as requested by the client</p></section>
+							<section data-background-color = "#c7ebef"><h2>Web address</h2><img src="img/LSBAWS_URL_Web_address.png"/></section>
+							<section data-background-color = "#c7ebef"><h2>Proxies</h2><p>Between the Web browser and the server, numerous computers and machines relay the HTTP messages. Due to the layered structure of the Web stack, most of these operate at either the transport, network or physical levels, becoming transparent at the HTTP layer. Those operating at the application layers are generally called proxies</p></section>
+							<section data-background-color = "#c7ebef"><h2>Proxies function</h2>
+								<ul>
+									<li>caching</li>
+									<li>filtering</li>
+									<li>load balancing</li>
+									<li>authentication</li>
+									<li>logging</li>
+								</ul>
+							</section>
+						</section>
+						<section>
+								<section data-background-color = "#c7ebef"><h2>HTTP Request</h2><img src="img/LSBAWS_HTTP_request_anatomy.png"/></section>
+								<section data-background-color = "#c7ebef"><h2>HTTP methods</h2>
+									<ul>
+											<li>GET</li>
+											<li>HEAD</li>
+											<li>POST</li>
+											<li>PUT</li>
+											<li>DELETE</li>
+											<li>TRACE</li>
+											<li>OPTION</li>
+											<li>CONNECT</li>
+									</ul>
+								</section>
+						</section>
+						<section>
+								<section data-background-color = "#c7ebef"><h2>HTTP Response</h2><img src="img/LSBAWS_HTTP_response_anatomy.png"/></section>
+								<section data-background-color = "#c7ebef"><h2>HTTP status code</h2>
+								<table>
+									<tr>
+									<th>Status</th>
+									<th>Code</th>
+									</tr>
+									<tr><td>Information</td><td>1XX</td></tr>
+									<tr><td>Successful</td><td>2XX</td></tr>
+									<tr><td>Redirection</td><td>3XX</td></tr>
+									<tr><td>Client Error</td><td>4XX</td></tr>
+									<tr><td>Server Error</td><td>5XX</td></tr>
+								</table>
+								</section>
+						</section>
+						<section data-background-color = "#c7ebef"><h3>Thank you)</h3></section>
+					
+				</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
